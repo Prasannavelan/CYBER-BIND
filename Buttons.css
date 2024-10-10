@@ -1,0 +1,22 @@
+/* src/components/Buttons.css */
+/* Create a separate CSS file for buttons to maintain consistency */
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  

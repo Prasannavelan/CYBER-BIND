@@ -1,0 +1,91 @@
+/* src/components/Internships.css */
+
+.internships-container {
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7fc; /* Changed background to a soft, light blue-gray shade */
+  }
+  
+  .internships-container h2 {
+    color: #1e90ff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .internships-container h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #1e90ff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .internship-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .internship-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .internship-card h3 {
+    color: #333333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .internship-card p {
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+  }
+  
+  .apply-button {
+    align-self: center;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1e90ff, #0d6efd); /* Gradient background */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  }
+  
+  .apply-button:hover {
+    background: linear-gradient(135deg, #0d6efd, #0056b3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .apply-button:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+  }
+  

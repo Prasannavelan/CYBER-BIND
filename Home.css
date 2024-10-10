@@ -1,0 +1,240 @@
+/* src/components/Home.css */
+
+.home-container {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #1e90ff;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Company Overview */
+  .overview-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .overview-section .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .overview-section h2 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .overview-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+  }
+  
+  /* Vision and Mission */
+  .vision-mission-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+  }
+  
+  .vision, .mission {
+    flex: 1 1 400px;
+    margin: 20px;
+  }
+  
+  .vision h3, .mission h3 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+    margin-bottom: 15px;
+  }
+  
+  .vision p, .mission p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555;
+  }
+  
+  /* Detailed Description */
+  .description-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .description-section .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .description-section h2 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .description-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+  
+  /* Our Process */
+  .process-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .process-section .section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .process-section h2 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 40px;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .process-step {
+    background-color: #f9f9f9;
+    border-left: 5px solid #1e90ff;
+    padding: 20px;
+    flex: 1 1 250px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .step-content h4 {
+    font-size: 1.5rem;
+    color: #1e90ff;
+    margin-bottom: 10px;
+  }
+  
+  .step-content p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+  }
+  
+  /* Contact Details */
+  .contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-section .section-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin: 10px 0;
+  }
+  
+  .contact-section a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .vision-mission-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .process-steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .process-step {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .overview-section h2,
+    .description-section h2,
+    .process-section h2,
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .vision, .mission {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  
+    .process-step {
+      width: 100%;
+    }
+  }
+  
